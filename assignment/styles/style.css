@@ -1,1 +1,12 @@
 /* give your assignment a fun background color */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(255, 0, 255);
+  text-align: center;
+}
