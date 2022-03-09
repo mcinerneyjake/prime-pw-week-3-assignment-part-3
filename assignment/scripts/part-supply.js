@@ -40,13 +40,16 @@ console.log(supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.'
 console.log("6. Showing supplyChanges...");
 
-function compareNumbers(a, b) {
+// THE FOLLOWING FUNCTION AND FOR LOOP WERE KEPT IN THE CODE SO THAT I COULD REMEMBER MY THOUGHT PROCESS WHILE SOLVING PROBLEM #6.
+// AND IT HELPS TO SOLIDIFY MY UNDERSTANDING OF THE .sort() AND .slice() FUNCTIONS. 😁
+
+/*function compareNumbers(a, b) {
   return a - b;
 }
 supplyChanges.sort();
 supplyChanges.sort(compareNumbers); // The function compareNumbers helps the sort() function sort the array numerically in respect to each index's value.
 
-console.log(supplyChanges);
+console.log(supplyChanges); */
 
 /*for (i = 0; i < supplyChanges.length; i++) {
   let negativeSupplyChanges = supplyChanges.slice(2, 3); // This variable stores the value of -6 in an array.
@@ -64,11 +67,9 @@ console.log(neutralSupplyChanges); */
 for (i = 0; i < supplyChanges.length; i++) {
   if (supplyChanges[i] > 0) {
     console.log(`Added ${supplyChanges[i]} parts`);
-  }
-  if ((supplyChanges[i] = 0)) {
+  } else if (supplyChanges[i] === 0) {
     console.log(`No change`);
-  }
-  if (supplyChanges[i] < 0) {
+  } else if (supplyChanges[i] < 0) {
     console.log(`Removed ${supplyChanges[i]} parts`);
   }
 }
