@@ -25,13 +25,13 @@ console.log(supplyChanges[1]); // DONE
 console.log("4. Removed item:");
 
 let removedValue = supplyChanges.pop();
-console.log(removedValue);
+console.log(removedValue); // DONE
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log("5. Adding 25 to supplyChanges.");
 
 supplyChanges.push(25);
-console.log(supplyChanges);
+console.log(supplyChanges); // DONE
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
@@ -72,7 +72,7 @@ for (i = 0; i < supplyChanges.length; i++) {
   } else if (supplyChanges[i] < 0) {
     console.log(`Removed ${supplyChanges[i]} parts`);
   }
-}
+} // DONE
 
 // STRETCH GOALS
 console.log("---  Stretch Goals  ---");
@@ -87,7 +87,7 @@ for (supply of supplyChanges) {
   } else if (supply < 0) {
     console.log(`Removed ${supply} parts`);
   }
-}
+} // DONE
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
@@ -97,7 +97,7 @@ const sumOfSupplyChanges = supplyChanges.reduce(
   (partialSum, a) => partialSum + a,
   0
 );
-console.log(sumOfSupplyChanges);
+console.log(sumOfSupplyChanges); // DONE
 
 // 9. We have a large stash of parts in our warehouse that we
 //    need to box up and get ready for shipment.
@@ -106,3 +106,19 @@ console.log(sumOfSupplyChanges);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
+let parts = Array.from({ length: 572 }, (_, i) => i + 1);
+let partsInBox = 7;
+
+console.log(parts);
+
+//console.log(parts);
+
+//console.log(Array.of(parts));
+
+//for (i = 0; i < parts);
+
+while (partsInBox < parts) {
+  console.log(partsInBox);
+  partsInBox++;
+}
