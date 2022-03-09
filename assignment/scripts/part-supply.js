@@ -107,18 +107,19 @@ console.log(sumOfSupplyChanges); // DONE
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
 
-let parts = Array.from({ length: 572 }, (_, i) => i + 1);
-let partsInBox = 7;
+// Office hours notes: pseudocode it out
 
-console.log(parts);
+// I need to loop until parts is greater than or equal to 7
+// LOOP TIME!
+// subtract 7 from parts for each box filled
 
-//console.log(parts);
+let partCount = 572;
+let boxesFilled = 0;
 
-//console.log(Array.of(parts));
-
-//for (i = 0; i < parts);
-
-while (partsInBox < parts) {
-  console.log(partsInBox);
-  partsInBox++;
+while (partCount >= 7) {
+  partCount -= 7; // subtract 7 from partCount each time the loop runs
+  boxesFilled += 1; // fill a box each time the loop runs
 }
+
+console.log(`I filled ${boxesFilled} boxes with parts!`);
+console.log(`There are ${partCount} parts remaining.`);
