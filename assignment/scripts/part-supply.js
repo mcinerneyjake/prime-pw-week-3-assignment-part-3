@@ -122,4 +122,4 @@ while (partCount >= 7) {
 }
 
 console.log(`I filled ${boxesFilled} boxes with parts!`);
-console.log(`There are ${partCount} parts remaining.`);
+console.log(`There are ${partCount} parts remaining.`); // DONE
