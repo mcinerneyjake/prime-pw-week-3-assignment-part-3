@@ -64,7 +64,7 @@ console.log(positiveSupplyChanges);
 console.log(negativeSupplyChanges);
 console.log(neutralSupplyChanges); */
 
-for (i = 0; i < supplyChanges.length; i++) {
+for (let i = 0; i < supplyChanges.length; i++) {
   if (supplyChanges[i] > 0) {
     console.log(`Added ${supplyChanges[i]} parts`);
   } else if (supplyChanges[i] === 0) {
@@ -79,7 +79,7 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
 
-for (supply of supplyChanges) {
+for (let supply of supplyChanges) {
   if (supply > 0) {
     console.log(`Added ${supply} parts`);
   } else if (supply === 0) {
